@@ -1,15 +1,8 @@
-// =========================
-// Amazon Clone JavaScript
-// =========================
 
-// Welcome Message
 window.addEventListener("load", () => {
     console.log("Amazon Clone Loaded Successfully!");
 });
 
-// ---------------------
-// Search Functionality
-// ---------------------
 
 const searchInput = document.querySelector(".search-input");
 const searchIcon = document.querySelector(".search-icon");
@@ -32,9 +25,6 @@ searchInput.addEventListener("keypress", function (e) {
     }
 });
 
-// ---------------------
-// Cart Counter
-// ---------------------
 
 let cart = 0;
 
@@ -48,9 +38,6 @@ cartBtn.addEventListener("click", () => {
     `;
 });
 
-// ---------------------
-// See More Buttons
-// ---------------------
 
 const seeMore = document.querySelectorAll(".box-content p");
 
@@ -62,9 +49,6 @@ seeMore.forEach((item) => {
     });
 });
 
-// ---------------------
-// Menu Button
-// ---------------------
 
 const menu = document.querySelector(".panel-all");
 
@@ -72,9 +56,6 @@ menu.addEventListener("click", () => {
     alert("Menu Clicked");
 });
 
-// ---------------------
-// Back To Top
-// ---------------------
 
 const topBtn = document.querySelector(".foot-panell");
 
@@ -87,9 +68,6 @@ topBtn.addEventListener("click", () => {
     });
 });
 
-// ---------------------
-// Highlight Search Box
-// ---------------------
 
 searchInput.addEventListener("focus", () => {
     searchInput.style.background = "#ffffe0";
